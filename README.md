@@ -1,2 +1,0 @@
-# angular18
-Tutorials
