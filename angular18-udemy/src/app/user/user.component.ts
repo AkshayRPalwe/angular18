@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, Input, signal } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
 
 @Component({
@@ -9,5 +9,12 @@ import { DUMMY_USERS } from '../dummy-users';
   styleUrl: './user.component.scss',
 })
 export class UserComponent {
+  @Input() avatar!: string;
+  @Input() name!: string;
+
+  get imagePath() {
+    return 'assets/users/' + this.avatar;
+  }
+
   onSelectUser() {}
 }
