@@ -4,6 +4,7 @@ import {
   EventEmitter,
   input,
   Input,
+  output,
   Output,
   signal,
 } from '@angular/core';
@@ -21,10 +22,11 @@ export class UserComponent {
   @Input({ required: true }) avatar!: string;
   @Input({ required: true }) name!: string;
 
-  @Output() select = new EventEmitter();
-
   // avatar = input.required<string>(); // signal
   // name = input.required<string>();
+
+  // @Output() select = new EventEmitter();
+  select = output<string>();
 
   get imagePath() {
     return 'assets/users/' + this.avatar;
