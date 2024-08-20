@@ -10,6 +10,18 @@ import {
 } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
 
+// type User = {
+//   id: string;
+//   name: string;
+//   avatar: string;
+// };
+
+interface User {
+  id: string;
+  name: string;
+  avatar: string;
+}
+
 @Component({
   selector: 'app-user',
   standalone: true,
@@ -18,11 +30,7 @@ import { DUMMY_USERS } from '../dummy-users';
   styleUrl: './user.component.scss',
 })
 export class UserComponent {
-  @Input({ required: true }) user!: {
-    id: string;
-    name: string;
-    avatar: string;
-  };
+  @Input({ required: true }) user!: User;
 
   // avatar = input.required<string>(); // signal
   // name = input.required<string>();
