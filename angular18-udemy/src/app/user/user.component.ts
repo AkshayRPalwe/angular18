@@ -9,6 +9,7 @@ import {
   signal,
 } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
+import { type User } from './user.model';
 
 // type User = {
 //   id: string;
@@ -16,11 +17,11 @@ import { DUMMY_USERS } from '../dummy-users';
 //   avatar: string;
 // };
 
-interface User {
-  id: string;
-  name: string;
-  avatar: string;
-}
+// interface User {
+//   id: string;
+//   name: string;
+//   avatar: string;
+// }
 
 @Component({
   selector: 'app-user',
