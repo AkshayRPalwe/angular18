@@ -38,6 +38,7 @@ export class UserComponent {
 
   @Output() select = new EventEmitter<string>();
   // select = output<string>();
+  @Input({ required: true }) selected!: boolean;
 
   get imagePath() {
     return 'assets/users/' + this.user.avatar;
