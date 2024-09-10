@@ -33,13 +33,12 @@ import { CardComponent } from "../shared/card/card.component";
 })
 export class UserComponent {
   @Input({ required: true }) user!: User;
+  @Input({ required: true }) selected!: boolean;
+  @Output() select = new EventEmitter<string>();
 
   // avatar = input.required<string>(); // signal
   // name = input.required<string>();
-
-  @Output() select = new EventEmitter<string>();
   // select = output<string>();
-  @Input({ required: true }) selected!: boolean;
 
   get imagePath() {
     return 'assets/users/' + this.user.avatar;
