@@ -1,14 +1,8 @@
-import { JsonPipe } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { TaskComponent } from './task/task.component';
-import { NewTaskComponent } from './new-task/new-task.component';
-import { type NewTaskData } from './task/task.model';
+import { Component, Input } from '@angular/core';
 import { TasksService } from './tasks.service';
 
 @Component({
   selector: 'app-tasks',
-  standalone: true,
-  imports: [JsonPipe, TaskComponent, NewTaskComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.scss',
 })

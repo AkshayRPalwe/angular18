@@ -1,10 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { UserComponent } from './user/user.component';
+import { Component } from '@angular/core';
 import { DUMMY_USERS } from './dummy-users';
-import { TasksComponent } from './tasks/tasks.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
