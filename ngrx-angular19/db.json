@@ -1,0 +1,24 @@
+{
+    "groceries": [
+      {
+        "id": 1,
+        "name": "apple",
+        "type": "fruit"
+      },
+      {
+        "id": 2,
+        "name": "banana",
+        "type": "fruit"
+      },
+      {
+        "id": 3,
+        "name": "chips",
+        "type": "snacks"
+      },
+      {
+        "id": 4,
+        "name": "doritos",
+        "type": "snacks"
+      }
+    ]
+  }
